@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro de Aluno</title>
+</head>
+<body>
+    <h1>Cadastro de Aluno</h1>
+    <form action="cadastro.php" method="post">
+        <label for="nome">Nome do Aluno:</label>
+        <input type="text" id="nome" name="nome"><br><br>
+        <label for="matricula">Matrícula:</label>
+        <input type="text" id="matricula" name="matricula"><br><br>
+        <label for="curso">Curso:</label>
+        <input type="text" id="curso" name="curso"><br><br>
+        <label for="email">E-mail Institucional:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone"><br><br>
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco"><br><br>
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep"><br><br>
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade"><br><br>
+        <label for="uf">UF (Estado):</label>
+        <input type="text" id="uf" name="uf"><br><br>
+        <label for="curso_horas">Curso para Horas Complementares:</label>
+        <input type="text" id="curso_horas" name="curso_horas"><br><br>
+        <label for="carga_horaria">Carga Horária:</label>
+        <input type="number" id="carga_horaria" name="carga_horaria"><br><br>
+        <input type="submit" value="Cadastrar">
+      </form>
+    <br>
+    <h1>Atualização de Carga Horária</h1>
+    <form action="somar_carga.php" method="post">
+        <label for="matricula_atualizar">Matrícula do Aluno:</label>
+        <input type="text" id="matricula_atualizar" name="matricula_atualizar"><br><br>
+        <label for="nova_carga_horaria">Nova Carga Horária:</label>
+        <input type="number" id="nova_carga_horaria" name="nova_carga_horaria"><br><br>
+        <input type="submit" value="Atualizar Carga Horária">
+      </form>
+
+</body>
+</html>
